@@ -1,6 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", start, false);
 
+function clear_screen(ctx) {
+    ctx.clear_screen(0, 0, 380, 280);
+}
+
 function drawLine(x, y, _x, _y, size, color) {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -44,6 +48,7 @@ function drawCircle(x, y, r) {
 function start() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
+    //clear_screen(ctx);
     ctx.fillStyle = "red";
     ctx.fillRect(0, 0, 380, 280);
     ctx.lineWidth = 10;
