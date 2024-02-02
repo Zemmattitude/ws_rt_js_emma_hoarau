@@ -53,5 +53,5 @@ function start() {
     ctx.fillRect(0, 0, 380, 280);
     ctx.lineWidth = 10;
     drawRectangle(0, 0, 380, 280, "black", 20);
-    //drawCircle(100, 200, 50);
+    drawCircle(100, 200, 50);
 }
